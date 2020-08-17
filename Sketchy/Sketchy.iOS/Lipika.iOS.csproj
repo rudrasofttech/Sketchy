@@ -147,9 +147,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Sketchy\Sketchy.csproj">
-      <Project>{4500B299-73B3-4487-8FBC-75DB99E80165}</Project>
-      <Name>Sketchy</Name>
+    <ProjectReference Include="..\Sketchy\Lipika.csproj">
+      <Project>{B1300FBF-06BF-4953-A023-EF5E98FD8051}</Project>
+      <Name>Lipika</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

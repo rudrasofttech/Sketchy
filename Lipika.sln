@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sketchy.Android", "Sketchy\Sketchy.Android\Sketchy.Android.csproj", "{8EC9519D-3897-4AFB-BDD0-957D964FA370}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lipika.Android", "Sketchy\Sketchy.Android\Lipika.Android.csproj", "{8EC9519D-3897-4AFB-BDD0-957D964FA370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sketchy.iOS", "Sketchy\Sketchy.iOS\Sketchy.iOS.csproj", "{A0E1B220-9BB9-4D8C-B26F-C705280FAA72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lipika.iOS", "Sketchy\Sketchy.iOS\Lipika.iOS.csproj", "{A0E1B220-9BB9-4D8C-B26F-C705280FAA72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sketchy", "Sketchy\Sketchy\Sketchy.csproj", "{B1300FBF-06BF-4953-A023-EF5E98FD8051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lipika", "Sketchy\Sketchy\Lipika.csproj", "{B1300FBF-06BF-4953-A023-EF5E98FD8051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
