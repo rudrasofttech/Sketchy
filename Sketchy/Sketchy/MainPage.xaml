@@ -6,8 +6,8 @@
              x:Class="Sketchy.MainPage" BackgroundColor="MintCream">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -15,7 +15,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto"  />
         </Grid.ColumnDefinitions>
-        <ScrollView Orientation="Horizontal" Grid.Row="0"
+        <ScrollView Orientation="Horizontal" Grid.Row="1"
                 Grid.ColumnSpan="2">
             <StackLayout Orientation="Horizontal" x:Name="ColorStack">
                 <Button WidthRequest="40" HeightRequest="40" BorderColor="Blue" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#343a40" CommandParameter="#343a40" Clicked="Button_Clicked"></Button>
@@ -30,16 +30,16 @@
         </ScrollView>
 
         <Button Text="Clear" 
-                Grid.Row="0"
+                Grid.Row="1"
                 Grid.Column="2"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Clicked="OnClearButtonClicked" Margin="0" />
+                Clicked="OnClearButtonClicked" BackgroundColor="Beige" Margin="0" />
 
         <!-- Enclose SKCanvasView in single-cell Grid. 
                 Otherwise, iOS won't get the touch events. -->
 
-        <Grid Grid.Row="1"
+        <Grid Grid.Row="0"
               Grid.Column="0"
               Grid.ColumnSpan="3"
               BackgroundColor="Transparent">
