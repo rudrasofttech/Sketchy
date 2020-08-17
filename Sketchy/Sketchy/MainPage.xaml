@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms" 
+             xmlns:tt="clr-namespace:Sketchy"
+             x:Class="Sketchy.MainPage" BackgroundColor="MintCream">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto"  />
+        </Grid.ColumnDefinitions>
+        <ScrollView Orientation="Horizontal" Grid.Row="0"
+                Grid.ColumnSpan="2">
+            <StackLayout Orientation="Horizontal" x:Name="ColorStack">
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Blue" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#343a40" CommandParameter="#343a40" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#28a745" CommandParameter="#28a745" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#007bff" CommandParameter="#007bff" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#5A6268" CommandParameter="#5A6268" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#dc3545" CommandParameter="#dc3545" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#ffc107" CommandParameter="#ffc107" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#800080" CommandParameter="#800080" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#EE82EE" CommandParameter="#EE82EE" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+
+        <Button Text="Clear" 
+                Grid.Row="0"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnClearButtonClicked" Margin="0" />
+
+        <!-- Enclose SKCanvasView in single-cell Grid. 
+                Otherwise, iOS won't get the touch events. -->
+
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              Grid.ColumnSpan="3"
+              BackgroundColor="Transparent">
+
+            <skia:SKCanvasView x:Name="canvasView"
+                               PaintSurface="OnCanvasViewPaintSurface" />
+            <Grid.Effects>
+                <tt:TouchEffect Capture="True"
+                                TouchAction="OnTouchEffectAction" />
+            </Grid.Effects>
+        </Grid>
+    </Grid>
+</ContentPage>
