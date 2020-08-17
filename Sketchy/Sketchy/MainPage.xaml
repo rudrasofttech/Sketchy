@@ -34,7 +34,7 @@
                 Grid.Column="2"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Clicked="OnClearButtonClicked" BackgroundColor="Beige" Margin="0" />
+                Clicked="OnClearButtonClicked" BackgroundColor="Beige" Margin="0" Padding="10,5,10,5" TextColor="Black" FontAttributes="Bold" />
 
         <!-- Enclose SKCanvasView in single-cell Grid. 
                 Otherwise, iOS won't get the touch events. -->
