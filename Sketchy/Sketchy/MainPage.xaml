@@ -26,6 +26,10 @@
                 <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#ffc107" CommandParameter="#ffc107" Clicked="Button_Clicked"></Button>
                 <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#800080" CommandParameter="#800080" Clicked="Button_Clicked"></Button>
                 <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#EE82EE" CommandParameter="#EE82EE" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#8B4513" CommandParameter="#8B4513" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#87CEEB" CommandParameter="#87CEEB" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#006400" CommandParameter="#006400" Clicked="Button_Clicked"></Button>
+                <Button WidthRequest="40" HeightRequest="40" BorderColor="Transparent" BorderWidth="5" Margin="3" CornerRadius="20" BackgroundColor="#ffffff" CommandParameter="#ffffff" Clicked="Button_Clicked"></Button>
             </StackLayout>
         </ScrollView>
 
